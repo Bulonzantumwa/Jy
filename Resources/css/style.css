@@ -1,0 +1,153 @@
+ /* orange color #cf6d17 */
+
+/*---------------------------------------------------------------------------------------*/
+/*Basic setups*/
+/*---------------------------------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #fff;
+    color:#555 ;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+
+
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Reusable components*/
+/*---------------------------------------------------------------------------------------*/
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 20px;
+}
+/*---------------------------------------------------------------------------------------*/
+/*Buttons*/
+/*---------------------------------------------------------------------------------------*/
+
+.btn:link,
+.btn:visited{ /** "link" simply indicate how the link or the button looks like in its normal state**/
+    display: inline-block;
+    padding: 10px 30px; /** top and bottom AND left and right**/
+    font-weight: 300;
+    text-decoration: none; /**removing the line under the link**/
+    border-radius: 200px;
+    transition: background-color 0.2s;
+    transition: border 0.2s;
+    transition: color 0.2s;
+}
+
+
+
+.btn-full:link,
+.btn-full:visited{ /**use flatuicolors to make a choice of the color**/
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+    
+    
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #d36301;
+}
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #cf6d17;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #cf6d17;
+    color: #fff;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*Header*/
+/*---------------------------------------------------------------------------------------*/
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0, 0, 0, 0.705)), url(backimg/grill.jpg);
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    border-radius: 50%;
+    margin-top: 20px;
+   
+}
+
+.main-nav { 
+    float: right;
+    margin-top: 50px;
+    list-style: none; /*get rid of the points before the links*/
+}
+
+.main-nav li {
+    display: inline-block; /* for arranging links side by side*/
+    margin-left: 40px; /* Each link will have a margin to the left*/
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%; /* knowing that 20px is 100% this is equivalent to 90%*/
+    /*border:1px solid #fff;
+    padding: 2px 5px 2px 5px;*/
+    padding-bottom: 5px; /*space inside of the box between the text and the margin*/
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #cf6d17;
+}
+
+
+
